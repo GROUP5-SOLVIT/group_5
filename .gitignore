@@ -1,0 +1,37 @@
+# Virtual environment
+cafe/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+db.sqlite3
+*.log
+migrations/
+!BoardsCafe/apps/business/migrations/
+!BoardsCafe/apps/business/migrations/*.py
+!BoardsCafe/apps/inventory/migrations/
+!BoardsCafe/apps/inventory/migrations/*.py
+!BoardsCafe/apps/roles/migrations/
+!BoardsCafe/apps/roles/migrations/*.py
+!BoardsCafe/apps/users/migrations/
+!BoardsCafe/apps/users/migrations/*.py
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env.*
+!.env.example
+
+AGENTS.md
+.amazonq
