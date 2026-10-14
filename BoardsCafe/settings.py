@@ -273,6 +273,11 @@ SPECTACULAR_SETTINGS = {
     'SCHEMA_PATH_PREFIX': '/api/v1/',
     'ENUM_NAME_OVERRIDES': {
         'HealthDatabaseStatusEnum': ['healthy', 'unhealthy'],
+        'Status34dEnum': ['AVAILABLE', 'OCCUPIED', 'RESERVED', 'MAINTENANCE'],
+        'OrderStatusEnum': ['draft', 'pending', 'paid', 'cancelled', 'refunded'],
+        'SupplierStatusEnum': ['active', 'inactive', 'suspended'],
+        'PurchaseStatusEnum': ['draft', 'ordered', 'partially_received', 'received', 'cancelled'],
+        'PaymentStatusEnum': ['pending', 'completed', 'failed', 'cancelled'],
     },
     'SERVE_PERMISSIONS': ['rest_framework.permissions.AllowAny'],
     'SECURITY': [

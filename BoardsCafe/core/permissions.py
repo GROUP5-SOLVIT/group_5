@@ -53,6 +53,29 @@ roles_delete = permission_class('roles.delete')
 roles_assign = permission_class('roles.assign_permissions')
 permissions_view = permission_class('permissions.view')
 
+# Recipe permissions
+recipes_view = permission_class('recipes.view')
+recipes_create = permission_class('recipes.create')
+recipes_update = permission_class('recipes.update')
+recipes_delete = permission_class('recipes.delete')
+
+# Purchasing permissions
+purchasing_view = permission_class('purchasing.view')
+purchasing_create = permission_class('purchasing.create')
+purchasing_update = permission_class('purchasing.update')
+purchasing_receive = permission_class('purchasing.receive')
+purchasing_delete = permission_class('purchasing.delete')
+
+# Finance permissions
+finance_view = permission_class('finance.view')
+finance_create = permission_class('finance.create')
+finance_update = permission_class('finance.update')
+finance_delete = permission_class('finance.delete')
+
+# Read-only analytical endpoints
+dashboard_view = permission_class('dashboard.view')
+reports_view = permission_class('reports.view')
+
 
 # Convenience function to check if user has a specific permission
 def user_has_permission(user, permission_codename):
